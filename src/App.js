@@ -17,12 +17,12 @@ function App() {
         <Navbar />
         <Container customClass='min_height'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/company' element={<Company />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/newproject' element={<NewProject />} />
-            <Route path='/project/:id' element={<Project />} />
+            <Route path='https://kaio05.github.io/costs/' element={<Home />} />
+            <Route path='https://kaio05.github.io/costs/company' element={<Company />} />
+            <Route path='https://kaio05.github.io/costs/projects' element={<Projects />} />
+            <Route path='https://kaio05.github.io/costs/contact' element={<Contact />} />
+            <Route path='https://kaio05.github.io/costs/newproject' element={<NewProject />} />
+            <Route path='https://kaio05.github.io/costs/project/:id' element={<Project />} />
           </Routes>
         </Container>
       </Router>
