@@ -7,8 +7,15 @@
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 1000,
+      "services": [
+        {
+          "name": "Contratar UI/UX designer",
+          "cost": "1000",
+          "description": "Criar a interface do sistema",
+          "id": "f2f6d556-c690-418c-be8f-f1026a345f50"
+        }
+      ],
       "id": 1
     },
     {
