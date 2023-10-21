@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './components/pages/Home'
 import Company from './components/pages/Company'
 import Contact from './components/pages/Contact'
@@ -17,12 +17,12 @@ function App() {
         <Navbar />
         <Container customClass='min_height'>
           <Routes>
-            <Route path='costs/' element={<Home />} />
-            <Route path='costs/company' element={<Company />} />
-            <Route path='costs/projects' element={<Projects />} />
-            <Route path='costs/contact' element={<Contact />} />
-            <Route path='costs/newproject' element={<NewProject />} />
-            <Route path='costs/project/:id' element={<Project />} />
+          <Route path='/' element={<Home />} />
+            <Route path='/company' element={<Company />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/newproject' element={<NewProject />} />
+            <Route path='/project/:id' element={<Project />} />
           </Routes>
         </Container>
       </Router>

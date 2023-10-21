@@ -14,16 +14,16 @@ function Navbar() {
                 </Link>
                 <ul className={styles.list}>
                     <li className={styles.item}>
-                        <Link to='costs/#/'>Home</Link>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to='costs/#/projects'>Projetos</Link>
+                        <Link to='/projects'>Projetos</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to='costs/#/company'>Empresa</Link>
+                        <Link to='/company'>Empresa</Link>
                     </li>
                     <li className={styles.item}>
-                        <Link to='costs/#/contact'>Contato</Link>
+                        <Link to='/contact'>Contato</Link>
                     </li>
                 </ul>
             </Container>

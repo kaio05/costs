@@ -24,7 +24,7 @@ function Projects() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch('http://localhost:5000/projects', {
+            fetch('https://kaio05.github.io/costs/db.json/projects', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
