@@ -26,7 +26,7 @@ function Project() {
     useEffect(() => {
 
         setTimeout(() => {
-            fetch(`https://kaio05.github.io/costs_projects_api/db.json/projects/${id}`, {
+            fetch(`https://costs-api-vercel.vercel.app/projects/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ function Project() {
         project.cost = newCost
         
         // update project
-        fetch(`http://localhost:5000/projects/${id}`, {
+        fetch(`https://costs-api-vercel.vercel.app/projects/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -92,7 +92,7 @@ function Project() {
         projectUpdated.services = servicesUpdated
         projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 
-        fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+        fetch(`https://costs-api-vercel.vercel.app/projects/${projectUpdated.id}`, {
             method:'PATCH',
             headers: {
                 'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ function Project() {
             return false
         }
 
-        fetch(`http://localhost:5000/projects/${project.id}`, {
+        fetch(`https://costs-api-vercel.vercel.app/projects/${project.id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
